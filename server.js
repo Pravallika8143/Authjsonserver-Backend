@@ -6,7 +6,7 @@ const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(bodyParser.urlencoded({extended:false}))
-server.use(bodyParser.json())
+server.use(bodyParser.json());
 
 server.use(middlewares)
 server.post("/login",(req,res)=>{
